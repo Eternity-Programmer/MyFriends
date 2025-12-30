@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+	<LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout1">
+		<EditText
+            p1:inputType="textPersonName"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/txtName"
+            p1:hint="Enter Name ..."
+            p1:layout_margin="4dp" />
+		<EditText
+            p1:inputType="textEmailAddress"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/txtEmail"
+            p1:hint="Enter Email ..."
+            p1:layout_margin="4dp" />
+		<EditText
+            p1:inputType="phone"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/txtPhone"
+            p1:hint="Enter Phone ..."
+            p1:layout_margin="4dp" />
+		<TableLayout
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/tableLayout1"
+            p1:stretchColumns="*">
+			<TableRow
+                p1:id="@+id/tableRow1">
+				<EditText
+                    p1:inputType="numberDecimal"
+                    p1:layout_column="0"
+                    p1:id="@+id/txtLat"
+                    p1:hint="Latitude ..."
+                    p1:layout_margin="2dp" />
+				<EditText
+                    p1:inputType="numberDecimal"
+                    p1:layout_column="1"
+                    p1:id="@+id/txtLong"
+                    p1:hint="Longitude ..."
+                    p1:layout_margin="2dp" />
+			</TableRow>
+		</TableLayout>
+		<LinearLayout
+            p1:orientation="horizontal"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout2"
+            p1:gravity="center">
+			<ImageButton
+                p1:src="@drawable/ic_new_picture"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/btnPhoto" />
+			<ImageButton
+                p1:src="@drawable/ic_locate"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/btnLocation" />
+			<ImageButton
+                p1:src="@drawable/ic_map"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/btnMap" />
+		</LinearLayout>
+		<ImageView
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/imgFriend" />
+	</LinearLayout>
+</ScrollView>
